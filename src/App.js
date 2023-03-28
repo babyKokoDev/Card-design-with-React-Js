@@ -1,24 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import CountryCard from './components/CountryCard';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <nav className="navbar navbar-dark bg-dark p-2 navbar-expand-sm">
+      <a href="/" className='navbar-brand'>React With Bootstrap Styles</a>
+    </nav>
+    <CountryCard />
+    </>
   );
 }
 
